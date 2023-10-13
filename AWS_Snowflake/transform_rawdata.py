@@ -24,7 +24,7 @@ def html_transform():
     
     book_name = titles[::6]
     # print(book_name)
-    api_key = 'AIzaSyA_l_f-3hNQwmS2z2DAWjcM_wfyaftCS2w'
+    api_key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
     
     gb_api = requests.get(f'https://www.googleapis.com/books/v1/volumes?q=ebooks')
     # print(gb_api)
