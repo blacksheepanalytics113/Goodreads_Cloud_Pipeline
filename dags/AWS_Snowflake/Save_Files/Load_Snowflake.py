@@ -14,9 +14,9 @@ def save_json_snowflake():
             # Replace with your Snowflake connection details
     conn = snowflake.connector.connect(
         user='ACCOUNTADMIN',
-        password='Ajiye2023',
-        account='https://br51793.central-us.azure.snowflakecomputing.com',
-        warehouse='COMPUTE_WH',
+        password='xxxxxxxx',
+        account='xxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+        warehouse='xxxxxxxxxxxxxxxxxxxxx',
         database='S3_LOAD',
         schema='PUBLIC'
     )
@@ -46,9 +46,9 @@ def save_json_snowflake():
 
     # except (Exception,snowflake.connector.errors.OperationalError) as error:
     #         print(error)
-    # # finally:
-    # #         if conn is not None:
-    conn.close()
+    # finally:
+    #     if conn is not None:
+    # conn.close()
     print('Warehouse connection closed.')
 save_json_snowflake()
 
