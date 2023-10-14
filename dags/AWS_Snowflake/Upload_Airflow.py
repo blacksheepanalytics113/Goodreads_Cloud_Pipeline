@@ -9,10 +9,10 @@ from AWS_Snowflake.upload_rawdata import upload_file
 with DAG("Upload_Airflow", start_date=datetime(2023, 10, 11),
 schedule_interval='@daily', max_active_runs=1, catchup=False) as dag:
 
-    QFA_script_A = PythonOperator(
+    Goodreads_script_A = PythonOperator(
         task_id="Upload_raw_data",
         python_callable=upload_file
     )
 
-    QFA_script_A
+    Goodreads_script_A
     
